@@ -50,15 +50,11 @@ import just.curiosity.renderer_3d.core.Renderer3D;
 
 public class Main {
   public static void main(String[] args) {
-    /*
-     * Just instantiate the renderer class by passing the screen
-     * width and height as parameters to the constructor.
-     * */
+    // Just instantiate the renderer class by passing the screen
+    // width and height as parameters to the constructor.
     Renderer3D renderer = new Renderer3D(800, 600);
 
-    /*
-     * Launch renderer.
-     * */
+    // Launch renderer.
     renderer.start();
   }
 }
@@ -79,17 +75,13 @@ import java.util.List;
 
 public class Main {
   public static void main(String[] args) {
-    /*
-     * Just instantiate the renderer class by passing the screen
-     * width and height as parameters to the constructor.
-     * */
+    // Just instantiate the renderer class by passing the screen
+    // width and height as parameters to the constructor.
     Renderer3D renderer = new Renderer3D(800, 600);
 
     List<Polygon3D> polygons = new ArrayList<>();
 
-    /*
-     * Adding a Simple Polygon to the Polygon Array.
-     * */
+    // Adding a Simple Polygon to the Polygon Array.
     Polygon3D polygon = new Polygon3D(Color.WHITE,
       new Point3D(0, -1, 0),
       new Point3D(0, 0, 1),
@@ -97,14 +89,10 @@ public class Main {
 
     polygons.add(polygon);
 
-    /*
-     * Passing polygons to our renderer.
-     * */
+    // Passing polygons to our renderer.
     renderer.setPolygons(polygons);
 
-    /*
-     * Launch renderer.
-     * */
+    // Launch renderer.
     renderer.start();
   }
 }
@@ -166,25 +154,17 @@ import java.util.List;
 
 public class Main {
   public static void main(String[] args) {
-    /*
-     * Just instantiate the renderer class by passing the screen
-     * width and height as parameters to the constructor.
-     * */
+    // Just instantiate the renderer class by passing the screen
+    // width and height as parameters to the constructor.
     Renderer3D renderer = new Renderer3D(800, 600);
 
-    /*
-     * Loading polygons from the builder.
-     * */
+    // Loading polygons from the builder.
     List<Polygon3D> polygons = PolygonBuilder.sphere(Color.WHITE);
 
-    /*
-     * Passing polygons to our renderer.
-     * */
+    // Passing polygons to our renderer.
     renderer.setPolygons(polygons);
 
-    /*
-     * Launch renderer.
-     * */
+    // Launch renderer.
     renderer.start();
   }
 }
@@ -207,15 +187,11 @@ import just.curiosity.renderer_3d.core.polygon3d.Polygon3D;
 
 public class Main {
   public static void main(String[] args) {
-    /*
-     * Just instantiate the renderer class by passing the screen
-     * width and height as parameters to the constructor.
-     * */
+    // Just instantiate the renderer class by passing the screen
+    // width and height as parameters to the constructor.
     Renderer3D renderer = new Renderer3D(800, 600);
 
-    /*
-     * Load simple model from "spaceship.obj" file.
-     * */
+    // Load simple model from "spaceship.obj" file.
     List<Polygon3D> polygons;
     try {
       polygons = PolygonBuilder.loadFromFile("src/main/resources/spacehip.obj", Color.WHITE);
@@ -223,14 +199,10 @@ public class Main {
       throw new RuntimeException("Can't load .obj file: " + e);
     }
 
-    /*
-     * Passing polygons to our renderer.
-     * */
+    // Passing polygons to our renderer.
     renderer.setPolygons(polygons);
 
-    /*
-     * Launch renderer.
-     * */
+    // Launch renderer.
     renderer.start();
   }
 }
@@ -251,25 +223,17 @@ import just.curiosity.renderer_3d.core.polygon3d.Polygon3D;
 
 public class Main {
   public static void main(String[] args) {
-    /*
-     * Just instantiate the renderer class by passing the screen
-     * width and height as parameters to the constructor.
-     * */
+    // Just instantiate the renderer class by passing the screen
+    // width and height as parameters to the constructor.
     Renderer3D renderer = new Renderer3D(800, 600);
 
-    /*
-     * Loading polygons from the builder.
-     * */
+    // Loading polygons from the builder.
     List<Polygon3D> polygons = PolygonBuilder.rgbCube();
 
-    /*
-     * Passing polygons to our renderer.
-     * */
+    // Passing polygons to our renderer.
     renderer.setPolygons(polygons);
 
-    /*
-     * Launch renderer.
-     * */
+    // Launch renderer.
     renderer.start();
   }
 }
