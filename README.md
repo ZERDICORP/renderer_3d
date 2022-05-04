@@ -59,7 +59,7 @@ public class Main {
   }
 }
 ```
-If you run the code above, you will get a black screen. This is because we didn't pass polygons to the renderer. So let's do it
+If you run the code above, you will get a black screen. This is because we didn't pass polygons to the renderer. So let's do it.
 
 #### Polygon initialization
 ```java
