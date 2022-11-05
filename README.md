@@ -194,7 +194,7 @@ public class Main {
     // Load simple model from "spaceship.obj" file.
     List<Polygon3D> polygons;
     try {
-      polygons = PolygonBuilder.loadFromFile("src/main/resources/spacehip.obj", Color.WHITE);
+      polygons = PolygonBuilder.loadFromFile("src/main/resources/spaceship.obj", Color.WHITE);
     } catch (IOException e) {
       throw new RuntimeException("Can't load .obj file: " + e);
     }
